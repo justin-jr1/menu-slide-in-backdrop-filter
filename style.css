@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background: url('background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+button{
+    background-color: hsl(206, 46%, 37%);
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.slide-in-menu{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.2s;
+}
+
+.slide-in-menu .menu{
+    background-color: white;
+    width: 80%;
+    height: 100%;
+}
+
+.outside-click{
+    width: 20%;
+    background: transparent;
+    backdrop-filter: blur(16px);
+}
